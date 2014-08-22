@@ -1,0 +1,21 @@
+<h1>Comments Index Reached</h1>
+
+<!-- index.html.erb -->
+
+   <div>
+        <h3>Title: <%= @post.title %> </h3>
+        <h3>Author: <%= @post.author %> </h3>
+        <p>
+        	Description: <%=  @post.description %>
+        </p>
+
+      <div>
+    	<h2> Comments </h2>
+    	<% @comments.each do |comment| %>
+    	<h3><%= comment.name %></h3>
+    	<p><%= comment.description %> </p>
+    </div>
+    <% end %>
+    </div>
+
+

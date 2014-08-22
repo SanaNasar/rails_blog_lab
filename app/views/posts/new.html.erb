@@ -1,0 +1,16 @@
+   <h1>Enter a new post!</h1>
+
+   <form action="/posts" method="post">
+ 	<div>
+    <input type="text" name="post[title]" placeholder="PostTitle" autofocus>
+    <input type="text" name="posts[author]" placeholder="Author"> <br>
+    <div>
+    	<textarea name="post[description]" rows="10" cols="36"></textarea>
+    </div>
+<!-- make sure every form comes from our site -->
+	    <%= token_tag form_authenticity_token %>
+	    <div>
+	    <button> Save News</button>
+	    </div>
+	</div>
+  </form>

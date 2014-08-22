@@ -1,0 +1,13 @@
+   <h1>Enter a new tag!</h1>
+
+   <form action="/tags" method="post">
+ 	<div>
+    <input type="text" label="Enter a tag name:" name="tag[name]" placeholder="Tag name" autofocus>
+
+<!-- make sure every form comes from our site -->
+	    <%= token_tag form_authenticity_token %>
+	    <div>
+	    <button> Save Tag</button>
+	    </div>
+	</div>
+  </form>

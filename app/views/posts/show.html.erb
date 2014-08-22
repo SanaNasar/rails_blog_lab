@@ -1,0 +1,14 @@
+<h2><%= @post.title %></h2>
+
+	<p>Author: <%= @post.author %></p>
+
+
+	<% if @post.tags.length > 0 %>
+	<p>Tags:
+		<% @tags.each do |tag| %>
+		<a href="/tags/<%=tag.id%>"><%=tag.name%></a>
+	<% end %>
+</p>
+<% end %>
+
+<p>Description: <%= @post.description %></p>

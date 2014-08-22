@@ -1,0 +1,11 @@
+<h2>List of all the tags for the news to search!</h2>
+
+<h3>Tag: <%= @tag.name %></h3>
+
+<ul>
+	<% @tag.posts.each do |post| %>
+	<li><a href="/posts/<%=post.id%>"><%=post.author%>: <%=post.title%></a></li>
+	<% end %>
+</ul>
+
+ 

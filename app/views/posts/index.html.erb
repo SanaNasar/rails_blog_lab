@@ -1,0 +1,16 @@
+<h2>Welcome People!!</h2>
+<h2>Welcome to the SF Headlines Today </h2>
+<h3> Feeling beige?? Just tune into Headlines Today </h3>
+<h3> Headlines Today!! </h3>
+
+	<% @posts.each do |post| %>
+
+    <div>
+    
+      <h3> Title: <%= post[:title] %> </h3> 
+      <p> Author: <%= post[:author] %> </p>
+      <p> Description: <%= post[:description] %> </p>
+      <a href = "/posts/<%= post.id %>">Show Post</a>
+    </div>
+
+  <% end %>

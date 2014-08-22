@@ -1,0 +1,11 @@
+<h3> Welcome to the Tags Page!</h3>
+<h3> Still Feeling beige?? </h3>
+<h3> List of tags for each post!!</h3>
+
+	<% @tags.each do |tag| %>
+
+    <div>
+    	<p> Tag: <%= tag[:name] %> </p> 
+    </div>
+
+  <% end %>
